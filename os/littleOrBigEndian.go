@@ -6,7 +6,7 @@ import (
 )
 
 func main() {
-	var i int = 1
+	var i uint32 = 1
 	ptr := unsafe.Pointer(&i)
 	if *(*byte)(ptr) == 1 {
 		fmt.Println("little endian")
