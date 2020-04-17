@@ -1,11 +1,11 @@
 package main
 
 import (
-	"os"
-	"math/rand"
 	"log"
-	"runtime/pprof"
+	"math/rand"
+	"os"
 	"runtime"
+	"runtime/pprof"
 )
 
 const (
@@ -21,7 +21,7 @@ func fillMatrix(m *[row][col]int) {
 	}
 }
 
-func calculate(m * [row][col]int) {
+func calculate(m *[row][col]int) {
 	res := 0
 	for i := 0; i < row; i++ {
 		for j := 0; j < col; j++ {
@@ -41,7 +41,6 @@ func main() {
 		log.Fatal("Could not start CPU profile", err)
 	}
 	defer pprof.StopCPUProfile()
-
 
 	// Main code
 	x := [row][col]int{}

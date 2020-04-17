@@ -1,9 +1,7 @@
 package main
 
 import (
-	"bytes"
 	"fmt"
-	"os"
 )
 
 type Duck interface {
@@ -34,5 +32,4 @@ func main() {
 
 	c.Walk()
 	c.Quack()
-	bytes.NewBuffer
 }
